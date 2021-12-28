@@ -1,6 +1,6 @@
 ---
-title: "装饰器模式"
-date: 2021-05-16T15:39:00+08:00
+title: "golang避坑之gorm默认0值"
+date: 2021-09-16T15:39:00+08:00
 description: PHP，golang工程师，项目管理，软件架构
 toc: true
 draft: true
