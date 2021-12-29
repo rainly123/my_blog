@@ -115,10 +115,3 @@ toc: true
 
    单topic最大分区数建议为20。
 
-包使用：
-
-1. go
-   1. https://github.com/Shopify/sarama
-   2. https://code.shihuo.cn/go/hms-components/tree/master/mq/kafka
-2. php
-   1. https://code.shihuo.cn/php-composer/kafka
