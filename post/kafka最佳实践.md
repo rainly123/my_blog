@@ -1,12 +1,12 @@
 ---
-title: "kafka最佳实践"
-date: 2021-12-28T15:39:00+08:00
+title: "kafka最优实践"
+date: 2021-01-28T15:39:00+08:00
 description: PHP，golang工程师，项目管理，软件架构
 draft: true
 toc: true
 ---
 
-## producer使用规范
+## producer使用
 
 1. acks (一般建议选择
 
@@ -41,7 +41,7 @@ toc: true
    1. retries，重试次数，建议设置为3。
    2. [retry.backoff.ms](http://retry.backoff.ms/)，重试间隔，建议设置为1000。
 
-## consumer使用规范
+## consumer使用
 
 1. 负载均衡
 
