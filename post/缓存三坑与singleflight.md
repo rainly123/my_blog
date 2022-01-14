@@ -16,7 +16,7 @@ draft: true
 ![cache-miss](../images/cache-miss.png)
 我们大多数时候的缓存策略是先从redis里面去读取数据，读取不到的情况下再去下游存储服务，因此高并发场景下，一旦出现雪崩，击穿，穿透这三种问题，存储服务将面临非常严峻的考验，因此严格限制对下游存储服务的并发数量也变得非常关键。
 golang官方给我们提供了sync.singlefilght这个包，由此，缓存策略可以优化成这样：
-![singleflight](/Users/sunmi/markdown文档/my_blog/images/singleflight.png)
+![singleflight](../images/singleflight.png)
 在绝大多数场景下，singleflight 都很好用，因此让很多人相信 singleflight 是完美无缺的银弹。在2020年的电商大促中，有朋友因为此种认知，导致线上业务出现了严重故障。
 
 ## singleflight科学实用
