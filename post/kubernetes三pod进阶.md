@@ -33,4 +33,4 @@ ConfigMap其实与Secret非常类似，他与Secret的主要区别在于，Confi
 不过，需要注意的是，**Downward API 能够获取到的信息，一定是 Pod 里的容器进程启动 之前就能够确定下来的信息**。而如果你想要获取 Pod 容器运行后才会出现的信息，比如， 容器进程的 PID，那就肯定不能使用 Downward API 了，而应该考虑在 Pod 里定义一个 sidecar 容器。
 
 ## ServiceAccountToken
-Service Account对象的作用，就是kebernetes内置的一种账户服务，它是kebernetes进行权限分配的对象，**service account的授权文件和信息，其实保存在一个特殊的Secret对象里面，这个特殊的Secret对象，成为Service Account Token，任何Kebernetes集群上的应用，都必须使用ServiceAccountToken里面保存的信息，才能合法的访问Api server**，Kubernetes 其实在每个 Pod 创建的时候，自动在它的 spec.volumes 部分添加上了默认 ServiceAccountToken 的定义，然后自动给每个容器加 上了对应的 volumeMounts 字段。Kebernetes支持的project volume其实只有三中，serviceAccountToken只不过是一种特殊的Sceret volume而已。
+Service Account对象的作用，就是kebernetes内置的一种账户服务，它是kebernetes进行权限分配的对象，**service account的授权文件和信息，其实保存在一个特殊的Secret对象里面，这个特殊的Secret对象，成为ServiceAccountToken，任何Kebernetes集群上的应用，都必须使用ServiceAccountToken里面保存的信息，才能合法的访问Api server**，Kubernetes 其实在每个 Pod 创建的时候，自动在它的 spec.volumes 部分添加上了默认 ServiceAccountToken 的定义，然后自动给每个容器加 上了对应的 volumeMounts 字段。Kebernetes支持的project volume其实只有三中，ServiceAccountToken只不过是一种特殊的Sceret volume而已。
