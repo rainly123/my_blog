@@ -1,5 +1,5 @@
 ---
-title: "kubernetes（二、pod进阶）"
+title: "kubernetes（三、pod进阶）"
 date: 2022-09-29T10:04:00+08:00
 draft: true
 toc: true
