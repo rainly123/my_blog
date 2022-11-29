@@ -1,7 +1,7 @@
 ---
 title: "关于golang框架搭建和开发规范的思考"
 date: 2021-04-11T17:04:00+08:00
-description: PHP，golang工程师，项目管理，软件架构
+description: java，golang工程师，项目管理，软件架构
 draft: true
 toc: true
 ---

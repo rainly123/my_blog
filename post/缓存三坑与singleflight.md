@@ -1,7 +1,7 @@
 ---
 title: "缓存三坑与singleflight"
 date: 2022-01-14T15:39:00+08:00
-description: PHP，golang工程师，项目管理，软件架构
+description: java，golang工程师，项目管理，软件架构
 toc: true
 draft: true
 ---
