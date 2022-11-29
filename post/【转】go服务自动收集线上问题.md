@@ -1,6 +1,6 @@
 ---
 title: "【转】go服务自动收集线上问题"
-date: 2022-10-08T17:04:00+08:00
+date: 2022-11-29T17:04:00+08:00
 description: java，golang工程师，项目管理，软件架构
 draft: true
 toc: true
